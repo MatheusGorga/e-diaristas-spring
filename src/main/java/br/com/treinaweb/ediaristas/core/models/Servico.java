@@ -25,7 +25,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString(onlyExplicitlyIncluded = true)
-public class Service {
+public class Servico {
 
   @EqualsAndHashCode.Include
   @ToString.Include
@@ -39,8 +39,8 @@ public class Service {
   @Column(name = "valor_minimo", nullable = false)
   private BigDecimal valorMinimo;
 
-  @Column(name = "gtd_horas", nullable = false)
-  private Integer gtdHoras;
+  @Column(name = "qtd_horas", nullable = false)
+  private Integer qtdHoras;
 
   @Column(name = "porcentagem_comissao", nullable = false)
   private BigDecimal porcentagemComissao;
