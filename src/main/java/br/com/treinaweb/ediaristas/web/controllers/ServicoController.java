@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -27,9 +28,6 @@ public class ServicoController {
     return modelAndView;
   }
 
-
-
-    
   @GetMapping("/cadastrar")
   public ModelAndView cadastrar(){
         var modelAndView = new ModelAndView("admin/servicos/form");
@@ -48,5 +46,12 @@ public class ServicoController {
     @ModelAttribute("icones")
     public Icone[] getIcone(){
       return Icone.values();
+    }
+
+
+    @GetMapping("/{id}/excluir")
+    public String excluir(@PathVariable Long id){
+      repository.deleteById(id);
+      return "redirect:/admin/servicos";
     }
 }
