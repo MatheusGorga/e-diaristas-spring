@@ -36,6 +36,7 @@ public class Servico {
   @Column(length = 50, nullable = false)
   private String name;
   
+
   @Column(name = "valor_minimo", nullable = false)
   private BigDecimal valorMinimo;
 
