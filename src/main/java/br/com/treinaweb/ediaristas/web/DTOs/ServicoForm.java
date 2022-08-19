@@ -1,4 +1,4 @@
-package br.com.treinaweb.ediaristas.web.DTOs;
+package br.com.treinaweb.ediaristas.web.dtos;
 
 import java.math.BigDecimal;
 
@@ -91,4 +91,5 @@ public class ServicoForm {
   @NotNull
   @Positive
   private Integer posicao;
+
 }

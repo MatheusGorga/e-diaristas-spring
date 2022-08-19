@@ -12,7 +12,7 @@ public enum Icone {
       this.nome = nome;
     }
 
-    public String getNome() {
+    public String getIcone() {
       return nome;
     }
 
