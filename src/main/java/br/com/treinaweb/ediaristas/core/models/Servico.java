@@ -18,10 +18,9 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 
-// Lombook resposponsavel por criar todos os getters, setters, constructor, equals e to string
 @Entity
-@Data
 @NoArgsConstructor
+@Data
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString(onlyExplicitlyIncluded = true)
@@ -89,3 +88,6 @@ public class Servico {
   @Column(nullable = false)
   private Integer posicao;
 }
+
+
+// Lombook resposponsavel por criar todos os getters, setters, constructor, equals e to string

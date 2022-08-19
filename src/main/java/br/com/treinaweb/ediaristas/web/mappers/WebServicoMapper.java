@@ -1,10 +1,10 @@
 package br.com.treinaweb.ediaristas.web.mappers;
 
+
 import org.springframework.stereotype.Component;
 
 import br.com.treinaweb.ediaristas.core.models.Servico;
 import br.com.treinaweb.ediaristas.web.dtos.ServicoForm;
-
 
 
 @Component
@@ -40,7 +40,7 @@ public class WebServicoMapper {
   }
   
 
-  public ServicoForm toForm (Servico model){
+  public ServicoForm toForm(Servico model){
     if(model == null){
       throw new IllegalArgumentException();
     }
